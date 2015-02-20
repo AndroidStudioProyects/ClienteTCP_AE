@@ -1,7 +1,7 @@
 package com.example.diego.clientetcp_ae;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -11,7 +11,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+// se arego esto
 
     }
 
