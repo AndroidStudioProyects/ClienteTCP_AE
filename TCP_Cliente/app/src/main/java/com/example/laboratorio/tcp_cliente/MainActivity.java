@@ -1,4 +1,4 @@
-package com.example.diego.clientetcp_ae;
+package com.example.laboratorio.tcp_cliente;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ import java.net.UnknownHostException;
 
 public class MainActivity extends ActionBarActivity {
 
-    EditText Mensaje,edit_IP = (EditText)findViewById(R.id.editIP),edit_Puerto;
+    EditText Mensaje,edit_IP ,edit_Puerto;
     String IP;
     int Puerto=9001;
     Button Btn_Enviar;
@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
                 clientAST  = new ClientAsyncTask();
                 clientAST.execute(new String[] { IP, puerto,mensaje1});
 
-                            }
+            }
         });
     }
 
@@ -63,7 +63,7 @@ public class MainActivity extends ActionBarActivity {
         textServer=(TextView)findViewById(R.id.textServer);
         edit_Puerto=(EditText)findViewById(R.id.editPuerto);
         Mensaje=(EditText)findViewById(R.id.editMensaje);
-            }
+    }
 
 
     class ClientAsyncTask extends AsyncTask<String, Void, String> {
@@ -102,6 +102,3 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 }
-
-
-
